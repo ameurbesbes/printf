@@ -8,7 +8,6 @@
  *@c: charac
  *@f: function needed
  */
- 
 typedef struct s
 {
 char *c;
