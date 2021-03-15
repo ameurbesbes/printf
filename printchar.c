@@ -1,11 +1,14 @@
 #include "holberton.h"
+#include <stdarg.h>
 /**
- *
- * 
- * 
+ *print_char- funct that print a char
+ *@argslist: list of arguments
+ *Return: return 1
  */
-int printc(va_list va)
+int print_char(va_list argslist)
 {
-	_putchar(va_arg(va,char));
-	return(1);
+char c;
+c = va_arg(argslist, int);
+_putchar(c);
+return (1);
 }
