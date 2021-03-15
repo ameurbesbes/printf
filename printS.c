@@ -1,14 +1,22 @@
 #include "holberton.h"
+#include <stdarg.h>
 /**
+ *print_string- func that print a string
+ *@argslist: list of arguments
+ *Return: return 1
  *
- * 
- * 
  */
-int printstring(va_list va)
+int print_string(va_list argslist)
 {
-        int i; 
-	char *tmp = va_arg(va, char *);
-	for(i = 0; tmp[i] != '\0'; i++);
-	_putchar(tmp[i]);
-        return(i + 1);
+int x, l = 0;
+char *c;
+c = va_arg(argslist, char *);
+if (c == NULL)
+c = "(null)";
+for (x = 0; c[x] != '\0'; x++)
+{
+_putchar(c[x]);
+l++;
+}
+return (l);
 }
