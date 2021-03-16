@@ -17,4 +17,6 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 int print_char(va_list argslist);
 int print_string(va_list argslist);
+int _print_i(va_list vi);
+int print_u(va_list un);
 #endif
