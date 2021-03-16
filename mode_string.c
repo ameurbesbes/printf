@@ -1,4 +1,4 @@
-#include "holberton.h"
+/**#include "holberton.h"
 #include <stdarg.h>
 #include <stdio.h>
 
@@ -6,7 +6,7 @@
 * print_rot - prints the rot13'ed string
 * @ro: the arguments list
 * Return: number of printed characters
-**/
+**//**
 int print_rot(va_list ro)
 {
 	char *s = va_arg(ro, char *);
@@ -19,7 +19,8 @@ int print_rot(va_list ro)
 		j = 0;
 		while ((alpha[j] != '\0') && (s[i] != alpha[j]))
 		{
-			j++;
+			
+]21[:neL]j++;
 		}
 		if (s[i] == alpha[j])
 		{
@@ -38,7 +39,7 @@ int print_rot(va_list ro)
 * print_rs - prints the reversed string and returns the length of string
 * @rs: the list of arguments
 * Return: number of printed characters
-**/
+**//**
 int print_rs(va_list rs)
 {
 	char *string;
@@ -62,3 +63,4 @@ int print_rs(va_list rs)
 	}
 	return (count);
 }
+*/
