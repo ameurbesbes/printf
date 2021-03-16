@@ -4,11 +4,12 @@
 #include <stdarg.h>
 
 /**
- *struct specifiers- struct
+ * struct ops - struct
  *@c: charac
  *@f: function needed
+ * Descreption: operation
  */
-typedef struct s
+typedef struct ops
 {
 char *c;
 int (*f)(va_list va);
