@@ -20,4 +20,6 @@ int print_string(va_list argslist);
 int _print_i(va_list vi);
 int print_u(va_list un);
 int print_oct(va_list oct);
+int print_c(va_list c);
+int print_s(va_list s);
 #endif
