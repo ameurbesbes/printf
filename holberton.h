@@ -24,6 +24,4 @@ int print_c(va_list c);
 int print_s(va_list s);
 int print_rot(va_list ro);
 int print_rs(va_list rs);
-int print_rot(va_list ro);
-int print_rs(va_list rs);
 #endif
