@@ -13,7 +13,7 @@ int print_rs(va_list rs)
 	int i = 0, count = 0;
 
 	string = va_arg(rs, char *);
-	if (string == '\0')
+	if (string == NULL)
 	{
 		string = ")llun(";
 	}

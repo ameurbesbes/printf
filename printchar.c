@@ -3,7 +3,8 @@
 /**
  *print_char- funct that print a char
  *@argslist: list of arguments
- *Return: return 1
+ *Return: return 1int print_char(va_list argslist)
+
  */
 int print_char(va_list argslist)
 {
