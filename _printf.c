@@ -11,6 +11,8 @@ int _printf(const char *format, ...)
 s_t func[] = {
 {"c", print_char},
 {"s", print_string},
+{"i", _print_i},
+{"d", _print_i},
 {NULL, NULL},
 };
 if (format == NULL)
