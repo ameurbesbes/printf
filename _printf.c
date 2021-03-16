@@ -13,6 +13,8 @@ s_t func[] = {
 {"s", print_string},
 {"i", _print_i},
 {"d", _print_i},
+{"r", print_rs},
+{"R",print_rot},
 {NULL, NULL},
 };
 if (format == NULL)
