@@ -19,4 +19,5 @@ int print_char(va_list argslist);
 int print_string(va_list argslist);
 int _print_i(va_list vi);
 int print_u(va_list un);
+int print_oct(va_list oct);
 #endif
