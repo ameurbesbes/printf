@@ -72,3 +72,69 @@ c++;
 }
 return (c);
 }
+/**
+ * print_oct - Converts a decimal num passed to the argument to an octal
+ * num
+ * @oct: The num to be converted
+ * Return: c of digit in octal num
+ */
+int print_oct(va_list oct)
+{
+unsigned int num, c = 0, index = 0;
+int arr[100];
+
+num = va_arg(oct, int);
+if (num < 9)
+{
+_putchar(num + '0');
+c = 1;
+}
+else if (num >= 9)
+{
+while (num > 0)
+{
+arr[index] = num % 8;
+num /= 8;
+index++;
+}
+}
+while (index--)
+{
+_putchar(arr[index] + '0');
+c++;
+}
+return (c);
+}
+
+/**
+* print_c - prints a char and returns 1
+* @c: the list of arguments
+* Return: num of printed characters
+*/
+int print_c(va_list c)
+{
+char ch = (char)va_arg(c, int);
+_putchar(ch);
+return (1);
+}
+
+/**
+* print_s - prints a string and returns the length of string
+* @s: the list of arguments
+* Return: num of printed characters
+*/
+int print_s(va_list s)
+{
+char *string;
+int i = 0;
+string = va_arg(s, char *);
+if (string == NULL)
+{
+string = "(null)";
+}
+for (i = 0; string[i]; i++)
+{
+_putchar(string[i]);
+}
+return (i);
+}
